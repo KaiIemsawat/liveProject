@@ -44,7 +44,7 @@ public class LoginSteps {
         WebDriverUtils.quitDriver();
     }
 
-
+    // Expect to see this test failed since actual title is "Home Page"
     @Then("The the title should be {string}")
     public void theTheTitleShouldBe(String titleName) {
         Assert.assertEquals(titleName, WebDriverUtils.getDriver().getTitle());
