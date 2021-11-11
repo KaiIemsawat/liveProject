@@ -20,4 +20,7 @@ public class LoginPage {
 
     @FindBy(id = "welcome_msg")
     public WebElement welcomeMSG;
+
+    @FindBy(xpath = "//head/title")
+    public WebElement pageTitle;
 }

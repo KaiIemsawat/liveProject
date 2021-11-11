@@ -45,5 +45,10 @@ public class LoginSteps {
     }
 
 
+    @Then("The the title should be {string}")
+    public void theTheTitleShouldBe(String titleName) {
+        Assert.assertEquals(titleName, WebDriverUtils.getDriver().getTitle());
+        WebDriverUtils.quitDriver();
+    }
 
 }
